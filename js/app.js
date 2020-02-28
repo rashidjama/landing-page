@@ -59,8 +59,11 @@ document.addEventListener("scroll", () => {
     for (let j = 0; j < pageSections.length; j++) {
         if (posIndex === j && pos < half_window_height) {
             document.getElementById(`s${j+1}`).classList.add("highlighted");
+            document.getElementById(`section${j+1}`).classList.add("your-active-class");
+
         } else {
             document.getElementById(`s${j+1}`).classList.remove("highlighted");
+            document.getElementById(`section${j+1}`).classList.remove("your-active-class");
         }
     }
 

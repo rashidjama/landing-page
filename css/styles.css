@@ -10,21 +10,26 @@
 
 
 /* ---- Base Rules ---- */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
-    scroll-behavior: smooth;
 }
-
+/* active class */
+.your-active-class {
+    background: purple !important;
+}
 
 /* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 1em; 
-    /* margin: 2em 1rem; */
+    margin: 2em 1rem;
 }
 
 @media only screen and (min-width: 35em){
@@ -219,7 +224,7 @@ section.your-active-class .landing__container::after {
 /*active class added with js*/
 .highlighted {
     background: yellowgreen;
-    color: white;
+    color: black;
     padding: 10px;
 }
 
